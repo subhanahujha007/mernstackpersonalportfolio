@@ -1,0 +1,51 @@
+.footerclass{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 3vmax;
+  background-color: black;
+    background-color: rgb(26, 26,26);
+}
+h3{
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+h5{
+    margin-top: 20px;
+    color: white;
+}
+h4{
+    margin-top: 20px;
+    color: white;
+}
+Link{
+border: 2px solid black;
+}
+.footerclass >div:last-child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+a{
+    font-size: 3vmax;
+    color: white;
+
+}
+.btnclassfooter{
+    background-color: black;
+    color: white;
+    padding: 20px;
+width: 120px;
+text-align: center;
+border: none;
+margin-top: 20px;
+transition: all 0.5s ;
+border-radius: 5px;
+text-decoration: none;    
+}
+.btnclassfooter:hover{
+    background-color: white;
+    color: black;
+}

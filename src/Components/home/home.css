@@ -1,0 +1,108 @@
+.homecanvas{
+    width: 100vw;
+    height: 110vh;
+    background-color: black;
+    max-width: 100%;
+}
+*::-webkit-scrollbar{
+    display: none;
+    background-color: black;
+}
+.homeskills{
+    background-color: hsl(219,48%,8%);
+    height: 1500px;
+    transform: translateY(0px);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    perspective: 450px;
+flex-direction: column;
+box-sizing: border-box;
+justify-content: space-around;
+align-items: center;
+overflow-x: hidden;
+}
+.homeskills{
+    text-align: center;
+    margin-bottom: 4vmax;
+    color: white;
+    font-size: 4vmax;
+}
+.homecubeskills{
+    width: 200px;
+   margin-top: 200px;
+    height: 200px;
+    animation: cubeanimation 15s linear  infinite alternate ;
+    transform-style: preserve-3d;
+}
+.homecubedivfaces{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.5;
+}
+.homecubedivfaces>img{
+    width: inherit;
+    height: inherit;
+}
+.homecubeskillfaced1{
+    transform: translate3d(0,0,120px);
+}
+
+.homecubeskillfaced2{
+    transform:rotateY(180deg) translate3d(0,0,120px);
+}
+.homecubeskillfaced3{
+    transform:rotateY(90deg) translate3d(0,0,120px);
+}
+.homecubeskillfaced4{
+    transform:rotateY(-90deg) translate3d(0,0,120px);
+}
+.homecubeskillfaced5{
+    transform:rotateX(90deg) translate3d(0,0,120px);
+}
+.homecubeskillfaced6{
+    transform:rotateX(-90deg) translate3d(0,0,120px);
+}
+@keyframes cubeanimation {
+    to{
+        transform: rotateY(560deg) rotateZ(720deg) rotateX(480deg);
+    }
+}
+.cubeshadow{
+    margin-bottom: 200px;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.171);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: cubeshadowani 15s linear  infinite alternate;
+}
+@keyframes cubeshadowani {
+    to{
+
+transform: scale(1.2)  translateY(-10px) 
+ }
+}
+.homeskillbox{
+    background-color: hsl(250,100%,75%);
+    padding: 0 2vmax;
+    position: absolute;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+}
+.homeskillbox>svg{
+    color: white;
+    margin: 20px;
+    font-size: 5vmax;
+    transition: all 0.5s;
+}
+.homeskillbox>svg:hover{
+    transform: scale(1.4);
+}
